@@ -1,0 +1,135 @@
+footer {
+  height: 500px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div {
+  margin-top: 20px;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer div p {
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 10px 0 10px;
+  transform: translateX(-150px);
+}
+
+footer div b {
+  font-weight: 600;
+}
+
+footer section {
+  margin-top: 80px;
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  height: 450px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer section svg {
+  width: 240px;
+}
+
+footer section div {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+  text-decoration-line: underline;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer section .footer-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  text-align: center;
+  width: 100%;
+}
+
+footer section .footer-rights {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  width: 180px;
+}
+
+@media (min-width: 701px) {
+
+  footer div p {
+    font-size: 18px;
+    margin: 0 15px 0 15px;
+  }
+
+  footer section svg {
+    width: 320px;
+  }
+
+  footer section {
+    width: 360px;
+  }
+
+  footer section .footer-text {
+    font-size: 16px;
+  }
+
+  footer section div {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1201px) {
+
+  footer div p {
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+  }
+
+  footer section svg {
+    width: 420px;
+  }
+
+  footer section {
+    width: 480px;
+  }
+
+}
