@@ -8,6 +8,8 @@
 
   <!-- SCRIPTS -->
   <script src="../dist/app.js" defer></script>
+  <script src="../dist/navbarResp.js" defer></script>
+  <script src="../dist/redirectToArticles.js" defer></script>
   <script src="../dist/getComments.js" defer></script>
 
   <!-- STYLES -->
@@ -25,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Serif:wght@300;400;500&family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Roboto+Mono&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Serif:wght@300;400;500&family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Roboto+Mono&display=swap"
     rel="stylesheet">
 
 </head>
@@ -36,7 +38,7 @@
   <nav class="navbar">
     <!-- cabelho de navegação -->
     <!-- logo clicável -->
-    <a class="nav-logo" href="#main-page">
+    <a class="nav-logo" href="../index-front-page.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="397" height="39" viewBox="0 0 397 39" fill="none">
         <path
           d="M1.46398 32H15.588V31.252L11.012 30.68C9.69198 30.504 8.72399 29.492 8.72399 28.128V7.05204L26.896 32H28.656V4.98404C28.656 3.66404 29.58 2.56404 30.9 2.38804L34.244 1.94804V1.20004H20.164V1.94804L24.74 2.52004C26.06 2.69604 27.028 3.70804 27.028 5.07204V25.4L12.772 5.55604C9.82399 1.42004 6.74398 1.20004 0.583984 1.20004V1.94804C3.26798 2.34404 5.90798 3.35604 7.05199 5.38004V28.216C7.05199 29.536 6.12798 30.636 4.80798 30.812L1.46398 31.252V32Z"
@@ -84,9 +86,10 @@
 
   </nav>
 
-  <!-- conteúdo da página -->
+  <!-- article's main content -->
   <main id="main-content">
-    <!-- topo -->
+
+    <!-- top page -->
     <section class="title">
       <h1>A few words about this blog platform, Ghost, and how this site was made</h1>
       <h2>Why Ghost (& Figma) instead of Medium, WordPress or other options?</h2>
@@ -97,8 +100,8 @@
     <section class="author">
       <img src="../assets/images/authors_face.jpg" alt="author's face">
       <div>
-        <p>PEDRO TONIN</p>
-        <p>Apr 15, 2020 · 4 min read</p>
+        <p class="name">PEDRO TONIN</p>
+        <p class="date">Aug 17, 2023 · 7 min read</p>
       </div>
     </section>
 
@@ -115,21 +118,24 @@
         This lovely web is full of everything which is created I don't know what in mind, considering that sometimes
         totally bonkers stuff might be highly relevant if it has the right kind of thinking behind it. 
       </p>
-      <img src="" alt="">
-      <caption>
-        Image caption centered this way and I’ll make this a bit longer to indicate the amount of line-height.
-      </caption>
+
+      <img src="../assets/images/body_images_articles/body_image1.jpg" alt="body image of the article">
+      <p class="image-caption">
+        Image caption centered this way and I'll make this a bit longer to indicate the amount of line-height.
+      </p>
+
       <p class="body-text">
         This lovely web is full of everything which is created I don't know what in mind, considering that sometimes
         totally bonkers stuff might be highly relevant if it has the right kind of thinking behind it. 
+      </p>
 
+      <p class="body-text">
         Luckily, in the middle of all that, there are some pockets of content that offer delightfully valuable contrast
         to cursory wisdom in some of the established channels.
       </p>
-
     </section>
 
-    <!-- share on redes sociais -->
+    <!-- share on social media -->
     <section class="share-socialmedia">
       <p>Share: </p>
       <div class="icons-container">
@@ -140,8 +146,8 @@
     </section>
 
     <!-- tags -->
-    <section>
-      <p>Tags:<em> product design</em>, <em>culture</em></p>
+    <section class="tags">
+      <p>Tags: <em>product design</em>, <em>culture</em></p>
     </section>
 
     <!-- about author -->
@@ -154,19 +160,58 @@
 
     <!-- comments - API -->
     <section class="comments">
-
-    </section>
-
-    <!-- what to read next -->
-    <section>
-
-    </section>
-
-    <!-- newsletter -->
-    <section>
-
+      <!-- READY, MADE IN TS/JS -->
     </section>
   </main>
+
+  <!-- what to read next -->
+  <section class="read-next">
+    <p>What to read next</p>
+    <!-- article 2 -->
+    <div id="articleTwo" class="article">
+      <img src="../assets/images/article_image2.jpg" alt="second article's image of the website">
+      <p>Here are some things you should know regarding how we work</p>
+    </div>
+    <!-- article 3 -->
+    <div id="articleThree" class="article">
+      <img src="../assets/images/article_image3.jpg" alt="third article's image of the website">
+      <p>Granny gives everyone the finger, and other tips from OFFF Barcelona</p>
+    </div>
+    <!-- article 4 -->
+    <div id="articleFour" class="article">
+      <img src="../assets/images/article_image4.png" alt="fourth article's image of the website">
+      <p>Hello world, or, in other words, why this blog exists</p>
+    </div>
+    <!-- article 5 -->
+    <div id="articleFive" class="article">
+      <img src="../assets/images/article_image5.jpg" alt="fifth article's image of the website">
+      <p>Here are some things you should know regarding how we work</p>
+    </div>
+    <!-- article 6 -->
+    <div id="articleSix" class="article">
+      <img src="../assets/images/article_image6.jpg" alt="sixth article's image of the website">
+      <p>Connecting artificial intelligence with digital product design</p>
+    </div>
+    <!-- article 7 -->
+    <div id="articleSeven" class="article">
+      <img src="../assets/images/article_image7.jpg" alt="seventh article's image of the website">
+      <p>It's all about finding the perfect balance</p>
+    </div>
+  </section>
+
+  <!-- newsletter -->
+  <section class="newsletter">
+    <p class="newsletter-title">
+      Sign up for the newsletter
+    </p>
+    <p class="newsletter-text">
+      If you want relevant updates occasionally, sign up for the private newsletter. Your email is never shared.
+    </p>
+    <div class="newsletter-input">
+      <input type="email" name="" id="">
+      <button type="button">SIGN UP</button>
+    </div>
+  </section>
 
   <!-- rodapé da página -->
   <footer>
