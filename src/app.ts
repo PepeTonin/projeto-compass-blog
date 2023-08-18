@@ -6,29 +6,32 @@ hambMenuButton.addEventListener("click", () => {
 });
 
 // pagination
-const pages = document.querySelectorAll(".pages")! as NodeListOf<HTMLElement>;
+// const pages = document.querySelectorAll(".pages")! as NodeListOf<HTMLElement>;
 
-const firstPageBtn = document.getElementById(
-  "firstPageBtn"
-)! as HTMLImageElement;
+// const firstPageBtn = document.getElementById(
+//   "firstPageBtn"
+// )! as HTMLImageElement;
 
-const previousPageBtn = document.getElementById(
-  "previousPageBtn"
-)! as HTMLImageElement;
+// const previousPageBtn = document.getElementById(
+//   "previousPageBtn"
+// )! as HTMLImageElement;
 
-const nextPageBtn = document.getElementById("nextPageBtn")! as HTMLImageElement;
+// const nextPageBtn = document.getElementById("nextPageBtn")! as HTMLImageElement;
 
-const lastPageBtn = document.getElementById("lastPageBtn")! as HTMLImageElement;
+// const lastPageBtn = document.getElementById("lastPageBtn")! as HTMLImageElement;
 
-const pageNumber = document.getElementById(
-  "pageNumber"
-)! as HTMLParagraphElement;
+// const pageNumber = document.getElementById(
+//   "pageNumber"
+// )! as HTMLParagraphElement;
 
-firstPageBtn.addEventListener("click", () => {
-});
+// firstPageBtn.addEventListener("click", () => {
+// });
 
-lastPageBtn.addEventListener("click", () => {});
+// lastPageBtn.addEventListener("click", () => {});
 
-previousPageBtn.addEventListener("click", () => {});
+// previousPageBtn.addEventListener("click", () => {});
 
-nextPageBtn.addEventListener("click", () => {});
+// nextPageBtn.addEventListener("click", () => {});
+
+
+
