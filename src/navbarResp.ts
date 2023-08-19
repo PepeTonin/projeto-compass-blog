@@ -4,3 +4,4 @@ const hambMenuButton = document.querySelector("#hambMenu")! as HTMLImageElement;
 hambMenuButton.addEventListener("click", () => {
   navList.classList.toggle("active");
 });
+

@@ -7,9 +7,9 @@
   <title>NORDIC ROSE WEBSITE</title>
 
   <!-- SCRIPTS -->
-  <script src="dist/app.js" defer></script>
   <script src="dist/navbarResp.js" defer></script>
-  <script src="dist/redirectToArticles.js" defer></script>
+  <script src="dist/frontPageRedirectToArticles.js" defer></script>
+  <script src="dist/pagination.js" defer></script>
 
   <!-- STYLES -->
   <link rel="stylesheet" href="styles/front-page.css">
@@ -20,7 +20,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
-  <!-- nome da fonte do google fonts igual a logo: EB Garamond -->
 
   <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +32,8 @@
 
 <body>
 
-  <!-- navbar -->
   <nav class="navbar">
-    <!-- cabelho de navegação -->
-    <!-- logo clicável -->
+
     <a class="nav-logo" href="#main-page">
       <svg xmlns="http://www.w3.org/2000/svg" width="397" height="39" viewBox="0 0 397 39" fill="none">
         <path
@@ -72,31 +69,26 @@
       </svg>
     </a>
 
-    <!-- hamburger menu -->
     <img id="hambMenu" src="assets/icons/hamb-menu.svg" alt="menu list">
 
-    <!-- menu de opções de navegação -->
     <ul>
-      <li class="active-navbar-list-item"><a href="#blog">BLOG</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#links">LINKS</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
+      <li class="active-navbar-list-item"><a href="#main-page">BLOG</a></li>
+      <li><a href="navbar-pages/fake-about-page.html">ABOUT</a></li>
+      <li><a href="navbar-pages/fake-links-page.html">LINKS</a></li>
+      <li><a href="navbar-pages/fake-projects-page.html">PROJECTS</a></li>
     </ul>
 
   </nav>
 
-  <!-- conteúdo da página -->
   <main id="main-page">
 
-    <!-- artigo do topo da página -->
-    <!-- article 1 -->
+    <!-- article1 -->
     <section id="articleOne" class="top-page">
       <img src="assets/images/article_image1.png" alt="first article's image of the website">
       <h1>A few words about this blog platform, Ghost, and how this site was made</h1>
       <h2>Why Ghost (& Figma) instead of Medium, WordPress or other options?</h2>
     </section>
 
-    <!-- all articles -->
     <p>All articles</p>
 
     <!-- page 1 -->
@@ -128,8 +120,6 @@
       </aside>
     </section>
 
-
-
     <!-- page 2 -->
     <section class="page">
       <!-- article 6 -->
@@ -158,8 +148,6 @@
         <p>advertisement</p>
       </aside>
     </section>
-
-
 
     <!-- page 3 -->
     <section class="page">
@@ -190,7 +178,6 @@
       </aside>
     </section>
 
-    <!-- pagination buttons -->
     <div class="pagination-controls">
       <img id="firstPageBtn" src="assets/icons/chevrons-left.svg" alt="first page of pagination">
       <img id="previousPageBtn" src="assets/icons/chevron-left.svg" alt="previous page of the pagination">
@@ -201,10 +188,8 @@
 
   </main>
 
-  <!-- rodapé da página -->
   <footer>
 
-    <!-- detalhe superior -->
     <div>
       <p><b>Digital product design</b></p>
       <p>Remote work</p>
@@ -224,7 +209,6 @@
       <p>Growth</p>
     </div>
 
-    <!-- corpo do rodapé -->
     <section>
       <svg xmlns="http://www.w3.org/2000/svg" width="397" height="39" viewBox="0 0 397 39" fill="none">
         <path

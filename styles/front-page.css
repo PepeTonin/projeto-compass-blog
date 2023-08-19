@@ -83,7 +83,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: scale 0.08s ease-in-out;
+  transition: scale 0.1s ease-in;
 }
 
 #main-page .page .article:hover {
@@ -140,7 +140,6 @@ a {
   height: 30px;
   width: 30px;
 }
-
 
 #main-page .pagination-controls p {
   font-family: "Plus Jakarta Sans", sans-serif;

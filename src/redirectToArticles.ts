@@ -2,7 +2,7 @@
 const articleOne = document.getElementById('articleOne') as HTMLElement;
 if(articleOne){
     articleOne.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article1.html";
+        window.location.href = "index-article1.html";
     })
 }
 
@@ -10,7 +10,7 @@ if(articleOne){
 const articleTwo = document.getElementById('articleTwo') as HTMLElement;
 if(articleTwo){
     articleTwo.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article2.html";
+        window.location.href = "index-article2.html";
     })
 }
 
@@ -18,15 +18,16 @@ if(articleTwo){
 const articleThree = document.getElementById('articleThree') as HTMLElement;
 if(articleThree){
     articleThree.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article3.html";
+        window.location.href = "index-article3.html";
     })
 }
+
 
 // redirect to article 4 via ID
 const articleFour = document.getElementById('articleFour') as HTMLElement;
 if(articleFour){
     articleFour.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article4.html";
+        window.location.href = "index-article4.html";
     })
 }
 
@@ -34,7 +35,7 @@ if(articleFour){
 const articleFive = document.getElementById('articleFive') as HTMLElement;
 if(articleFive){
     articleFive.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article5.html";
+        window.location.href = "index-article5.html";
     })
 }
 
@@ -42,7 +43,7 @@ if(articleFive){
 const articleSix = document.getElementById('articleSix') as HTMLElement;
 if(articleSix){
     articleSix.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article6.html";
+        window.location.href = "index-article6.html";
     })
 }
 
@@ -50,7 +51,7 @@ if(articleSix){
 const articleSeven = document.getElementById('articleSeven') as HTMLElement;
 if(articleSeven){
     articleSeven.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article7.html";
+        window.location.href = "index-article7.html";
     })
 }
 
@@ -58,7 +59,7 @@ if(articleSeven){
 const articleEight = document.getElementById('articleEight') as HTMLElement;
 if(articleEight){
     articleEight.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article8.html";
+        window.location.href = "index-article8.html";
     })
 }
 
@@ -66,7 +67,7 @@ if(articleEight){
 const articleNine = document.getElementById('articleNine') as HTMLElement;
 if(articleNine){
     articleNine.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article9.html";
+        window.location.href = "index-article9.html";
     })
 }
 
@@ -74,15 +75,15 @@ if(articleNine){
 const articleTen = document.getElementById('articleTen') as HTMLElement;
 if(articleTen){
     articleTen.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article10.html";
+        window.location.href = "index-article10.html";
     })
 }
 
 // redirect to article 11 via ID
-const articleEleve = document.getElementById('articleEleve') as HTMLElement;
-if(articleEleve){
-    articleEleve.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article11.html";
+const articleEleven = document.getElementById('articleEleven') as HTMLElement;
+if(articleEleven){
+    articleEleven.addEventListener('click', () => {
+        window.location.href = "index-article11.html";
     })
 }
 
@@ -90,7 +91,7 @@ if(articleEleve){
 const articleTwelve = document.getElementById('articleTwelve') as HTMLElement;
 if(articleTwelve){
     articleTwelve.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article12.html";
+        window.location.href = "index-article12.html";
     })
 }
 
@@ -98,6 +99,6 @@ if(articleTwelve){
 const articleThirteen = document.getElementById('articleThirteen') as HTMLElement;
 if(articleThirteen){
     articleThirteen.addEventListener('click', () => {
-        window.location.href = "articles-htmls/index-article13.html";
+        window.location.href = "index-article13.html";
     })
 }

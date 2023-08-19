@@ -32,6 +32,7 @@ em {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 850px;
 }
 
 #main-content .title h1 {
@@ -174,12 +175,11 @@ em {
 }
 
 #main-content .share-socialmedia .icons-container img:nth-of-type(2) {
-  padding: 0 45px;
   border-right: 1px solid #eaeaea;
   border-left: 1px solid #eaeaea;
 }
 
-#main-content .share-socialmedia .icons-container img:nth-of-type(n) {
+#main-content .share-socialmedia .icons-container img {
   padding: 0 45px;
 }
 
@@ -224,7 +224,8 @@ em {
   font-weight: 600;
 }
 
-#main-content .comments .comment-title {
+#main-content .comments .comment-title,
+#main-content .post-new-comment > p {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -260,6 +261,60 @@ em {
   width: 300px;
 }
 
+#main-content .post-new-comment .new-comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content .post-new-comment .new-comment-container label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  text-align: start;
+}
+
+#main-content .post-new-comment .new-comment-container input {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 308px;
+  margin-bottom: 15px;
+}
+
+#main-content .post-new-comment .new-comment-container button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+
+#main-content .post-new-comment .new-comment-container button:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+
+#main-content .post-new-comment .new-comment-container button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+  transition: 0.05s ease-in;
+}
+
 section.read-next {
   display: flex;
   flex-direction: column;
@@ -285,15 +340,20 @@ section.read-next > p {
   margin-bottom: 25px;
 }
 
-section.read-next .article {
+section.read-next .articles-container {
+  display: flex;
+  flex-direction: column;
+}
+
+section.read-next .articles-container .article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: scale 0.08s ease-in-out;
+  transition: scale 0.1s ease-in;
 }
 
-section.read-next .article:hover {
+section.read-next .articles-container .article:hover {
   scale: 1.03;
   cursor: pointer;
 }
@@ -302,7 +362,7 @@ section.read-next img {
   width: 330px;
 }
 
-section.read-next .article p {
+section.read-next .articles-container .article p {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #000;
   text-align: center;
@@ -346,7 +406,7 @@ section.newsletter .newsletter-text {
   font-weight: 400;
   line-height: 140%;
   width: 300px;
-  margin: 15px 0;
+  margin: 15px 0 25px 0;
 }
 
 section.newsletter .newsletter-input {
@@ -421,20 +481,16 @@ section.newsletter .newsletter-input button {
     letter-spacing: 0.42px;
     margin-bottom: 10px;
   }
-  
+
   #main-content .share-socialmedia .icons-container {
     width: 450px;
   }
-  
+
   #main-content .share-socialmedia .icons-container img {
     width: 25px;
   }
-  
-  #main-content .share-socialmedia .icons-container img:nth-of-type(2) {
-    padding: 0 62.5px;
-  }
-  
-  #main-content .share-socialmedia .icons-container img:nth-of-type(n) {
+
+  #main-content .share-socialmedia .icons-container img {
     padding: 0 62.5px;
   }
 
@@ -449,8 +505,238 @@ section.newsletter .newsletter-input button {
   #main-content .about-author p {
     line-height: 170%;
   }
-  
+
   #main-content .comments .comment .comment-body {
     width: 400px;
+  }
+
+  #main-content .post-new-comment .new-comment-container {
+    width: 430px;
+  }
+
+  #main-content .post-new-comment .new-comment-container input {
+    padding: 5px 10px;
+    width: 408px;
+  }
+
+  #main-content .post-new-comment .new-comment-container button {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1201px) {
+  #main-content .author {
+    width: 650px;
+    max-width: 100%;
+  }
+
+  #main-content .author p {
+    font-size: 16px;
+  }
+
+  #main-content .title h1 {
+    font-size: 54px;
+    margin: 0px 5% 24px 5%;
+    line-height: 1.03;
+  }
+
+  #main-content .title h2 {
+    font-size: 20px;
+    margin: 0 20% 30px 20%;
+    line-height: 150%;
+  }
+
+  #main-content .title img {
+    width: 1000px;
+  }
+
+  #main-content .article-body {
+    width: 650px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main-content .article-body .body-text {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  #main-content .article-body .body-title {
+    font-size: 32px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  #main-content .article-body img {
+    width: 850px;
+  }
+
+  #main-content .article-body .image-caption {
+    font-size: 16px;
+  }
+
+  #main-content .share-socialmedia > p {
+    display: none;
+  }
+
+  #main-content .share-socialmedia .icons-container {
+    width: 650px;
+    height: 60px;
+  }
+
+  #main-content .share-socialmedia .icons-container img {
+    padding: 0;
+    margin-left: 22.5px;
+  }
+
+  #main-content .share-socialmedia .icons-container img:nth-of-type(2) {
+    border: none;
+  }
+
+  #main-content .share-socialmedia .icons-container span {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  #main-content .share-socialmedia .icons-container span:nth-of-type(1),
+  #main-content .share-socialmedia .icons-container span:nth-of-type(2) {
+    border-right: 1px solid #eaeaea;
+  }
+
+  #main-content
+    .share-socialmedia
+    .icons-container
+    span.share-text:nth-of-type(1)::before {
+    content: "Share on Facebook";
+    position: relative;
+    top: 19.5px;
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #main-content
+    .share-socialmedia
+    .icons-container
+    span.share-text:nth-of-type(2)::before {
+    content: "Share on Twitter";
+    position: relative;
+    top: 19.5px;
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #main-content
+    .share-socialmedia
+    .icons-container
+    span.share-text:nth-of-type(3)::before {
+    content: "Share on WhatsApp";
+    position: relative;
+    top: 19.5px;
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #main-content .tags {
+    font-size: 16px;
+    width: 650px;
+  }
+
+  #main-content .about-author {
+    width: 650px;
+  }
+
+  #main-content .about-author p {
+    font-size: 16px;
+  }
+
+  #main-content .comments .comment .comment-user {
+    font-size: 16px;
+  }
+
+  #main-content .comments .comment-user::after {
+    font-size: 16px;
+  }
+
+  #main-content .comments .comment .comment-body {
+    font-size: 18px;
+    width: 600px;
+    padding: 10px 15px;
+  }
+
+  #main-content .post-new-comment .new-comment-container {
+    width: 640px;
+    font-size: 18px;
+  }
+
+  #main-content .post-new-comment .new-comment-container label {
+    font-size: 18px;
+  }
+
+  #main-content .post-new-comment .new-comment-container input {
+    padding: 10px 15px;
+    width: 612px;
+    font-size: 14px;
+  }
+
+  #main-content .post-new-comment .new-comment-container button {
+    padding: 10px 15px;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  section.read-next > p {
+    font-size: 44px;
+  }
+
+  section.read-next .articles-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1050px;
+  }
+
+  section.read-next img {
+    width: 330px;
+    height: 200px;
+  }
+
+  section.newsletter {
+    width: 620px;
+    height: 310px;
+    padding: 0;
+    border-top: 7px solid black;
+  }
+
+  section.newsletter .newsletter-title {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  section.newsletter .newsletter-text {
+    font-size: 20px;
+    width: 520px;
+  }
+
+  section.newsletter .newsletter-input {
+    width: 450px;
+  }
+
+  section.newsletter .newsletter-input button {
+    font-size: 20px;
+    height: 55px;
+    width: 150px;
   }
 }
