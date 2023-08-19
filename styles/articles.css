@@ -13,7 +13,8 @@ ul {
   list-style: none;
 }
 
-a, em {
+a,
+em {
   font: inherit;
   color: inherit;
   text-decoration: none;
@@ -110,7 +111,6 @@ a, em {
 }
 
 #main-content .article-body .body-text {
-  
   font-family: "Amiri", serif;
   color: #000;
   font-size: 16px;
@@ -244,7 +244,7 @@ a, em {
 
 #main-content .comments .comment-user::after {
   content: ":";
-  }
+}
 
 #main-content .comments .comment .comment-body {
   font-family: "Amiri", serif;
@@ -260,6 +260,197 @@ a, em {
   width: 300px;
 }
 
-.read-next img {
-  width: 50px;
+section.read-next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.read-next svg {
+  transform: translateY(20px);
+}
+
+section.read-next > p {
+  font-family: "Amiri", serif;
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  border-top: 2px solid black;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+
+section.read-next .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: scale 0.08s ease-in-out;
+}
+
+section.read-next .article:hover {
+  scale: 1.03;
+  cursor: pointer;
+}
+
+section.read-next img {
+  width: 330px;
+}
+
+section.read-next .article p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  width: 260px;
+  word-spacing: normal;
+  margin-bottom: 40px;
+}
+
+section.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 5px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+section.newsletter .newsletter-title {
+  width: 300px;
+  font-family: "Amiri", serif;
+  color: #000;
+  text-align: center;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+section.newsletter .newsletter-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  width: 300px;
+  margin: 15px 0;
+}
+
+section.newsletter .newsletter-input {
+  display: flex;
+  width: 300px;
+}
+
+section.newsletter .newsletter-input input {
+  border: 1px solid black;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+section.newsletter .newsletter-input button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 100px;
+}
+
+@media (min-width: 701px) {
+  #main-content .title img {
+    border-bottom: none;
+  }
+
+  #main-content .title img {
+    margin-bottom: 0px;
+  }
+
+  #main-content .author {
+    padding-top: 20px;
+    border-top: 2px solid black;
+  }
+
+  section.newsletter {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 450px;
+  }
+
+  .newsletter-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 951px) {
+  #main-content .title h1 {
+    font-size: 40px;
+  }
+
+  #main-content .article-body .body-text {
+    font-size: 18px;
+  }
+
+  #main-content .share-socialmedia p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    margin-bottom: 10px;
+  }
+  
+  #main-content .share-socialmedia .icons-container {
+    width: 450px;
+  }
+  
+  #main-content .share-socialmedia .icons-container img {
+    width: 25px;
+  }
+  
+  #main-content .share-socialmedia .icons-container img:nth-of-type(2) {
+    padding: 0 62.5px;
+  }
+  
+  #main-content .share-socialmedia .icons-container img:nth-of-type(n) {
+    padding: 0 62.5px;
+  }
+
+  #main-content .tags {
+    width: 450px;
+  }
+
+  #main-content .about-author {
+    width: 450px;
+  }
+
+  #main-content .about-author p {
+    line-height: 170%;
+  }
+  
+  #main-content .comments .comment .comment-body {
+    width: 400px;
+  }
 }
