@@ -94,7 +94,6 @@ footer section .footer-rights {
 }
 
 @media (min-width: 701px) {
-
   footer div p {
     font-size: 18px;
     margin: 0 15px 0 15px;
@@ -118,7 +117,6 @@ footer section .footer-rights {
 }
 
 @media (min-width: 1201px) {
-
   footer div p {
     font-size: 20px;
     margin: 0 20px 0 20px;
@@ -131,5 +129,4 @@ footer section .footer-rights {
   footer section {
     width: 480px;
   }
-
 }

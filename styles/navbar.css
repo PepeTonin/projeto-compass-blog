@@ -1,4 +1,5 @@
 .navbar {
+  z-index: 10;
   position: fixed;
   top: 0;
   width: 100%;
@@ -114,5 +115,19 @@
 @media (min-width: 1201px) {
   .navbar svg {
     width: 300px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .navbar .nav-logo {
+    margin-left: 80px;
+  }
+
+  .navbar ul li:last-of-type {
+    margin-right: 80px;
+  }
+
+  .navbar ul {
+    width: 600px;
   }
 }
