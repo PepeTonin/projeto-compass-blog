@@ -2,11 +2,11 @@ Author: Pedro Henrique de Avila Tonin
 
 # First Challenge
 
-In this document, I will describe the project and showcase all the features that I have added.
+In this document, I am going to describe the project and showcase all the features that I have added.
 
 The blog is fully responsive. It can be viewed in both mobile and desktop versions with complete accessibility.
 
-First, I will show the mobile version.
+First, I am going to show the mobile version.
 ## Mobile
 
 ### Front page
